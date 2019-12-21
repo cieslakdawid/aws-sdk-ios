@@ -423,7 +423,7 @@ static AWSS3TransferUtility *_defaultS3TransferUtility = nil;
         }
         
         //Create the NS URL session
-        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:_sessionIdentifier];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         configuration.allowsCellularAccess = serviceConfiguration.allowsCellularAccess;
         configuration.timeoutIntervalForResource = transferUtilityConfiguration.timeoutIntervalForResource;
         
